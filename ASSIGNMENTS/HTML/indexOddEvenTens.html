@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Java Script</title>
+    <script src="/ASSIGNMENTS/JS/mainOddEvenTens.js"></script>
+</head>
+<body>
+    <h3>Assignment</h3>
+
+var EVEN =[]; <br>
+var ODD =[]; <br>
+var TENS=[];<br>
+
+for(var i = 1; i<=100; i++)<br>
+{<br>
+if (i%2==0 && i%10!=0){<br>
+    EVEN.push(i); <br>
+}<br>
+else if (i%2==1)<br>
+{<br>
+    ODD.push(i); <br>
+}<br>
+else if (i%10==0){<br>
+    TENS.push(i);<br>
+}<br>
+}<br>
+console.log(EVEN);<br>
+console.log(ODD);<br>
+console.log(TENS);<br>
+
+</body>
+</html>

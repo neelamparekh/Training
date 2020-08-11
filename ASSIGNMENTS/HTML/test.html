@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TEST</title>
+    <link rel="stylesheet" href="../CSS/test.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1> WELCOME TO HOME PAGE </h1>
+    <label>User Name </label>
+    <input type="text" id="username" /> <br /><br />
+    <button onclick="getDetails()"> SUBMIT </button><br /><br />
+
+    <label> Recent Search</label>
+    <ol id="recentSearch"> </ol>
+    <!-- If the name is already there in recent search don't add it again!
+     Recent search list items -  Onclick
+        I need to get user details and repo details -->
+
+    <h3>USER DETAILS</h3>
+    <table id="userData">
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <th id="nam"></th>
+            <th id="loc"></th>
+        </tr>
+    </table><br /><br>
+    <!-- User Details  -  1 - Full Name, Location -->
+
+    <h3> REPO DETAILS</h3>
+    <table id="repoData">
+        <tr>
+            <td>ID</td>
+            <td>Repo Name</td>
+            <td>URL</td>
+            <td>Created At</td>
+            <td>Pushed At</td>
+            <td>Updated At</td>
+        </tr>
+        <tr>
+            <td id="id"></td>
+            <td id="name"></td>
+            <td id="url"></td>
+            <td id="created_at"></td>
+            <td id="pushed_at"></td>
+            <td id="updated_at"></td>
+        </tr>
+    </table><br /><br />
+    <!-- Repo Details - 2 every repo should be a row!! -->
+
+    <h3 id="location"> WEATHER DETAILS</h3>
+    <table id="weatherData">
+        <!-- Error Handling must be done! 
+            Should show weather details - 3 of the location -->
+
+        <!-- Push your code to GITHUB-->
+        <tr>
+            <th>City</th>
+            <th>Humidity</th>
+            <th>Temperature</th>
+        </tr>
+    </table>
+
+    <script src="../JS/test.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+/* Element Selector */
+body {
+    background-image: url("/ASSIGNMENTS/IMAGES/c3.jpg");background-repeat:no-repeat;
+}
+a:link, a:visited {
+
+    color: darkred;
+    text-align: center;
+    text-decoration: yellow;
+    display: inline-block;
+}
+h2 {
+    color: darkblue;
+}
+
+
+table, tr, th, td {
+    border: 1px solid black;
+}

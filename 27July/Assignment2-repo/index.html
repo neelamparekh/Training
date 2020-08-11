@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>GIT REPO</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Display Repository Details</h1>
+    <label>UserName</label>
+    <input type="text" id="username" /><br /><br />
+
+    <label>Repo Index</label>
+    <input type="number" id="indexnumber"/> <br /><br />
+    <button onclick="getRepoData()"> Get Data</button> <br /><br />
+
+    <!-- <p id="profile"></p> -->
+
+    
+    <table>
+        <tr> 
+            
+            <th>Repo Name</th> 
+            <th>Owner Name</th>
+            <!-- <th>URL</th>
+            <th>Created At</th>
+            <th>Pused At</th>
+            <th>Size</th>
+            <th>Language</th> -->
+        </tr>
+
+        <tr>
+           <th id="reponame"></th> 
+           <th id="owner"></th>
+           <!-- <th id="displayURL"></th>
+           <th id="displaycreated"></th> 
+           <th id="displayPushed"></th>
+           <th id="displaysize"></th>
+           <th id="displayLanguage"></th> -->
+        </tr>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
