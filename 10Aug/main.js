@@ -1,23 +1,37 @@
 const names = [];
+const x = names.toString();
+localStorage.setItem("userName", x);
 
 function getDetails(name) {
 
     const userName = name ? name : document.getElementById('userName').value;
+
     if (userName !== " ") {
 
         getUserData(userName);
-
         const res = names.includes(userName);
 
         if (!res) {
-            names.push(userName);
+            names = localStorage.getItem("userName");
+            //names.push(userName);
             fillRecentSearch(names);
         }
-    } else {
-        document.getElementById('location').innerHTML = 'Enter a valid UserName!!!';
     }
-}
+    if (userName == " ") {
+        clearAll(names);
 
+    }
+    else {
+
+        document.getElementById('location').innerHTML = 'Enter a valid UserName!!!';
+
+    }
+
+}
+function clearAll() {
+    document.getElementById('userName').style.display = "none";
+
+}
 
 function fillRecentSearch(users) {
 
@@ -42,6 +56,7 @@ function getUserData(userName) {
                 document.getElementById('location').innerHTML = data.location;
                 getWeatherData(data.location);
             } else {
+
                 document.getElementById('location').innerHTML = 'No Location Details Found!';
             }
 
@@ -73,6 +88,7 @@ function getRepoData(userName) {
             document.getElementById('repoData').innerHTML = result;
         },
         error: function (error) {
+
             console.log(error);
         }
     });
@@ -94,7 +110,14 @@ function getWeatherData(location) {
             </tr>`;
         },
         error: function (error) {
+
             console.log(error);
         }
     });
 }
+
+//Local Storage
+//GET and SET
+
+localStorage.setItem("a", "10");
+console.log(localStorage.getItem("a"));
