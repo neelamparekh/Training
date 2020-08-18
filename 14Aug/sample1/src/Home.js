@@ -12,7 +12,7 @@ class Home extends Component {
         super(props); // Prop is a keyword (props is an Object) which takes all the parameters
         this.state = {
             // State -> applicable only for class components . (After 16.8 also in functional components)
-
+            data: " ",
             students: ['Harshith', 'Nilam', 'Ranjani', 'Jayesh'],
             department: ['IT', "Management", "HR"],
         };
@@ -30,6 +30,8 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <input type="text" onChang={this.onChang} />
+                <h3>{this.state.data}</h3>
                 <List data={this.state.students} />
                 <List data={this.state.employess} />
             </div>  // we can only have one element to return i.e <div></div>
