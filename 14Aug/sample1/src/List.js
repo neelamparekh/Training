@@ -6,13 +6,13 @@ function List(props) {
         <ol>
             { // To write Javascript in btn HTML then we write in "{  }"
                 props.data.map(function (item) {
-                    return <li>
-                        {item}
-                    </li>
+                    return <li>  {item} </li>;
+                    //<li key={item}>{item}</li> //give unique key to <li></li> 
+
                 })
             }
         </ol>
-    </div>;
-}
+    </div>
 
+}
 export default List;

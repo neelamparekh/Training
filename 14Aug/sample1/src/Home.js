@@ -36,6 +36,7 @@ class Home extends Component {
 
     //This is a Function that is being Called
     captureName = (event) => {
+        //document.getElementById('stdName' ) => <input type = "text"/>
         this.setState({
             stdName: event.target.value, // enetred in stdName: " "
         });
@@ -53,10 +54,14 @@ class Home extends Component {
         this.setState({
             students: tempData, // Replacing the tempData to studnets// Modified the tempData
         });
-    }
+    } // Complete render method will be called if we do {this.setState()}
+
     render() {
         return ( // We will import List here
             <div>
+
+                {/* {console.log("Rendered!")} */}
+
                 <label>Enter Student Name : </label>
                 <input type="text" onChange={this.captureName} />
                 <button onClick={this.addStudent}> ADD STUDENT</button>
