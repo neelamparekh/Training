@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Home from "./Home";
-import List from "./List";
+//import Home from "./Home";
+
 
 function App() {
 

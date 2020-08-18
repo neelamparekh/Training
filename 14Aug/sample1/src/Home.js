@@ -1,6 +1,5 @@
 import React, { Component } from "react"; // version 16 - Class and Functions .. ( >16.8)
 import List from "./List";
-import Dashboard from "./Dashboard";
 
 
 // CLASS Component
@@ -11,9 +10,15 @@ class Home extends Component {
     constructor(props) {
         super(props); // Prop is a keyword (props is an Object) which takes all the parameters
         this.state = {
+            //State is an Object - Everything is managed by state
+
             // State -> applicable only for class components . (After 16.8 also in functional components)
+
             data: " ",
-            students: ['Harshith', 'Nilam', 'Ranjani', 'Jayesh'],
+            name: " ",
+            clsName: " ",
+            stdName: " ",
+            students: ['Harshith', 'Nilam', 'Ranjani', 'Jayesh'], // To display this in Home, we create Component List.js
             department: ['IT', "Management", "HR"],
         };
     }
@@ -22,18 +27,42 @@ class Home extends Component {
 
     // In React, data flows only in One direction. Parent -> Child (One Way Communication)
 
-    onChang = (e) => {
+    // onChang = (e) => {
+    //     this.setState({
+    //         data: e.target.value,
+    //     });
+    // };
+
+
+    //This is a Function that is being Called
+    captureName = (event) => {
         this.setState({
-            data: e.target.value,
+            stdName: event.target.value, // enetred in stdName: " "
         });
+
+        // console.log("Captured!");
+        // console.log(event); // object
+        // console.log(event.target); // will give particular value // 
+        // console.log(event.target.value); // This will give value entered in textbox
     };
+
+    // addStudent Function is being called ONCLICK
+    addStudent = () => {
+        let tempData = this.state.students; // Make a copy of the array which is in tempData
+        tempData.push(this.state.stdName); // Added the Value/ new student Name into tempData
+        this.setState({
+            students: tempData, // Replacing the tempData to studnets// Modified the tempData
+        });
+    }
     render() {
-        return (
+        return ( // We will import List here
             <div>
-                <input type="text" onChang={this.onChang} />
-                <h3>{this.state.data}</h3>
+                <label>Enter Student Name : </label>
+                <input type="text" onChange={this.captureName} />
+                <button onClick={this.addStudent}> ADD STUDENT</button>
+
                 <List data={this.state.students} />
-                <List data={this.state.employess} />
+                <List data={this.state.department} />
             </div>  // we can only have one element to return i.e <div></div>
         );
     }

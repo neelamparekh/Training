@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 //FUNCTIONAL Component
-// Reusable Component
+// Its a Reusable Component - It will accept props and display
 
 function Dashboard() {
     return (
