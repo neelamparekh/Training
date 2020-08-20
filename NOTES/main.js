@@ -23,7 +23,7 @@
 //     -->
 //     <!--
 
-    
+
 //     <ol>
 //         <li> Home</li>
 //         <li> Dashboard</li>
@@ -103,9 +103,9 @@
 //CONDITION
 
 //if (false) { //Sun rises in West?
-  //  console.log("YES");// YES
+//  console.log("YES");// YES
 //} else {
-  // console.log("NO"); // NO
+// console.log("NO"); // NO
 //}
 
 //var a = 10; // assignment operator
@@ -125,9 +125,9 @@
 //=== -> It will check for the type strictly
 
 //if(a>b) { // false // (a<b), (a==b), (a===b), (a!=b), (a>=b)
- //   console.log("YES"); //YES
+//   console.log("YES"); //YES
 //} else {
-  //  console.log("NO"); // NO
+//  console.log("NO"); // NO
 //}
 
 
@@ -200,9 +200,9 @@
 //    i++;  
 //  } //CAREFULL -> YOU'LL LEAD TO INFINITE LOOP IF you dont use i++;
 
- //--> DO WHILE <--
- //var i = 6;
- // THE LOOP WILL RUN AT LEAST ONCE
+//--> DO WHILE <--
+//var i = 6;
+// THE LOOP WILL RUN AT LEAST ONCE
 //  do { // EXIT CONTROLLED LOOP
 //    console.log(i);
 //    i++;
@@ -213,10 +213,10 @@
 // { 
 //   if((i%2)==1)  // if((i%2)==0) -> Print Even Numbers
 //   {
-  //console.log(i);
+//console.log(i);
 // }
 //}
- 
+
 // ASSIGNMENT -1 -- Print TOO , FOO, TOOFOO
 
 // for (let i = 1; i<= 100 ; i++) 
@@ -235,7 +235,7 @@
 //     }
 //  }
 
- 
+
 // Adding Number 1 to 20 // print 120
 
 //  var RESULT = 0;
@@ -256,10 +256,10 @@
 //     name: 'Nilam',
 //     rollNo: 1,
 //     gender: "Female",
-    //subjects: [1,2,3, "MAths", true, {
-    // subjects: ["C++","JAVA","JS"]
-        //name: 'X'
-    //}, [] ] // Array - Values (NOT key Val pairs)
+//subjects: [1,2,3, "MAths", true, {
+// subjects: ["C++","JAVA","JS"]
+//name: 'X'
+//}, [] ] // Array - Values (NOT key Val pairs)
 //};  //  empty Object - many properties - KEY: VALUE pairs
 
 // var names = ['Jayesh', 'Nilam']
@@ -439,7 +439,7 @@
 //     <label>City Name</label> <br>
 //     <input type="text" id="city"/> <br/><br/>
 //     <button onclick="getData()">Display Weather Data</button> <br/><br/>
-    
+
 
 //     <table style="border: 1px solid black;">
 //         <tr>
@@ -447,7 +447,7 @@
 //             <th>HUMIDITY</th>
 //             <th>WEATHER</th>
 //             <th>TEMPERATURE</th>
-           
+
 //         </tr>
 
 //         <tr>
@@ -468,7 +468,7 @@
 
 // function getData(){
 //     var City = document.getElementById('city').value;
-    
+
 //     $.ajax({
 //         url: 'http://api.openweathermap.org/data/2.5/weather?q=' + City + '&appid=4e8fe55b900263c5f83603ed631e15ad',
 
@@ -480,13 +480,13 @@
 //             document.getElementById('displayHumidity').innerHTML = data.main.humidity;
 //             document.getElementById('displayWeather').innerHTML = data.weather[0].main;
 //             document.getElementById('displayTemp').innerHTML = data.main.temp;
-            
+
 //         },
-        
+
 //         error: function(e){
 //             console.log(e);
 //         }
-            
+
 //     })
 // }
 
@@ -507,55 +507,55 @@
 //JSON. Stringify(data) --> It will convert Object to String
 
 
-    // function getData(){ 
-    //     var userName = document.getElementById('username').value;
-    
-    //     console.log(document.getElementById('displayURL'));
-        
-    //     $.ajax({
-    //         url: 'http://api.github.com/users/' + userName,
-    //         success: function(data){
-    //             console.log(data);
-    
-    //             document.getElementById('displayName').innerHTML=data.name;
-    //             console.log(document.getElementById('displayName')); // goes to innerHTML
-    //             document.getElementById('displayURL').innerHTML=data.url;
-    //         },
-    //         error: function(e) {
-    //             console.log(e);
-    //         }
-    //     }) 
-    
-    // }
+// function getData(){ 
+//     var userName = document.getElementById('username').value;
 
-    //JSON.stringify == Converts Object to String
-    //JSON.parse == Converts String to Object
+//     console.log(document.getElementById('displayURL'));
 
-    // var a = {
-    //     name: "A"
-    // }
-    // document.getElementById("result").innerText = a;
+//     $.ajax({
+//         url: 'http://api.github.com/users/' + userName,
+//         success: function(data){
+//             console.log(data);
 
-    // console.log(a); // [object Object]
+//             document.getElementById('displayName').innerHTML=data.name;
+//             console.log(document.getElementById('displayName')); // goes to innerHTML
+//             document.getElementById('displayURL').innerHTML=data.url;
+//         },
+//         error: function(e) {
+//             console.log(e);
+//         }
+//     }) 
 
-    // var a = {
-    //     name: "A"
-    // }
+// }
 
-    // document.getElementById("result").innerText=JSON.stringify(a); // {"name":"A"} in HTML
-    // console.log(a); // {name:A}
-    // console.log(typeof(a)); //object
-    // console.log(JSON.stringify(a)); // {"name":"A"} in Console // Its String
-    // //console.log(typeof(JSON.parse(a)));
+//JSON.stringify == Converts Object to String
+//JSON.parse == Converts String to Object
 
-    // var b= JSON.stringify(a); // String
-    // console.log(typeof(JSON.parse(b))); // Converted into Object 
+// var a = {
+//     name: "A"
+// }
+// document.getElementById("result").innerText = a;
+
+// console.log(a); // [object Object]
+
+// var a = {
+//     name: "A"
+// }
+
+// document.getElementById("result").innerText=JSON.stringify(a); // {"name":"A"} in HTML
+// console.log(a); // {name:A}
+// console.log(typeof(a)); //object
+// console.log(JSON.stringify(a)); // {"name":"A"} in Console // Its String
+// //console.log(typeof(JSON.parse(a)));
+
+// var b= JSON.stringify(a); // String
+// console.log(typeof(JSON.parse(b))); // Converted into Object 
 
 
 
-    // DOM - Document Object Modal = It only accepts Strings & does not understand Object
-    // For Paragraph object its a innerHTML property
-    //<p id="result"></p>
+// DOM - Document Object Modal = It only accepts Strings & does not understand Object
+// For Paragraph object its a innerHTML property
+//<p id="result"></p>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -563,7 +563,7 @@
 //     var userName = document.getElementById('username').value;
 
 //     console.log(document.getElementById('displayURL'));
-    
+
 //     $.ajax({
 //         url: 'http://api.github.com/users/' + userName,
 //         success: function(data){
@@ -586,7 +586,7 @@
 // function getRepoData(){ 
 //         var userName = document.getElementById('username').value;
 //         var index = document.getElementById("indexnumber").value;
-        
+
 //         $.ajax({
 //             url: `http://api.github.com/users/${userName}/repos`,
 
@@ -602,7 +602,7 @@
 //                 console.log(e);
 //             }
 //         }) 
-    
+
 //     }
 
 
@@ -628,37 +628,37 @@
 // console.log(a);//20
 // console.log(b);//Error // let Lives in a Block 
 
-    //If you declare a Var & let in a Function then;
+//If you declare a Var & let in a Function then;
 
-    // function display(){
+// function display(){
 
-    //     var a = 20;
-    //     console.log(a);//20
-    // } //block
-    // {
-    //     let b = 30;
-    //     console.log(b);//30
-    // }
-    // display(); 
-
-
-    //HOISTING = The variables which are declared as var are pushed to the top 
-    //              of the scope before execution.
+//     var a = 20;
+//     console.log(a);//20
+// } //block
+// {
+//     let b = 30;
+//     console.log(b);//30
+// }
+// display(); 
 
 
-    // console.log(a); // Undefined
-    // console.log(b); // Error: Can't Access
-    // var a = 10;
-    // let b = 20;
+//HOISTING = The variables which are declared as var are pushed to the top 
+//              of the scope before execution.
 
-    //==============When COMPILED CODE==========
 
-    // var a; // undefined 
-    //  console.log(a); // Undefined
-    //  console.log(b); // Error
+// console.log(a); // Undefined
+// console.log(b); // Error: Can't Access
+// var a = 10;
+// let b = 20;
 
-    //  a=10; // var a is pushed to the top
-    //  let b=20; // variables can be accessed only after declaration
+//==============When COMPILED CODE==========
+
+// var a; // undefined 
+//  console.log(a); // Undefined
+//  console.log(b); // Error
+
+//  a=10; // var a is pushed to the top
+//  let b=20; // variables can be accessed only after declaration
 
 //-----Block Scope in Real Time 
 // Loops, switch, if/else, do/while
@@ -724,7 +724,7 @@
 // let result = ``;
 // food.forEach(function (item) { // for(let i=0; i< food.length; i++){ food[i] => 0 1 2 3}
 //     result +=`<li>${item}</li>`
-    
+
 // });
 //     document.getElementById('food_items').innerHTML=result;
 
@@ -865,57 +865,57 @@
 
 //=====================  Types of FUNCTIONS   ========================
 
-    // function add(){
-    //     return true;
+// function add(){
+//     return true;
 
-    // } // function returns something // Function
-    // add();  // Function call
-
-
-    // function sub(a){
-    //     return a-1;
-    // } // Parameterized function
-    // sub(6); // Function call
+// } // function returns something // Function
+// add();  // Function call
 
 
-    // const mul = function(){   // different ways to declare a functio// Value can have a function
-    //     return true;
-    // }; // Function as a value
-    // mul();// Function call
+// function sub(a){
+//     return a-1;
+// } // Parameterized function
+// sub(6); // Function call
 
 
-    // function calc (fn, fn1, fn2){ // fn,fn1,fn2 are Arguments/Parameters
-    //     fn();
-    //     fn1();
-    //     fn2();
-    // } // Function as an Argument / Param
-    // calc(add,sub,mul); // Function as an argument/ parameter // add=fn, sub=fn1, mul=fn2
+// const mul = function(){   // different ways to declare a functio// Value can have a function
+//     return true;
+// }; // Function as a value
+// mul();// Function call
 
-    // const student = {
-    //     marks: function(){
-    //         return 100;
 
-    //     },
-    // }; // Property as a Function
-    // student.marks(); // Function call 
+// function calc (fn, fn1, fn2){ // fn,fn1,fn2 are Arguments/Parameters
+//     fn();
+//     fn1();
+//     fn2();
+// } // Function as an Argument / Param
+// calc(add,sub,mul); // Function as an argument/ parameter // add=fn, sub=fn1, mul=fn2
+
+// const student = {
+//     marks: function(){
+//         return 100;
+
+//     },
+// }; // Property as a Function
+// student.marks(); // Function call 
 
 //==================================================================
 
-    //Accessing Arguments in a Function
-    // function marks(){
-    //     console.log(arguments); 
-    // }
-    // marks(1,2,3,4); // {0:1, 1:2, 2:3, 3:4}
+//Accessing Arguments in a Function
+// function marks(){
+//     console.log(arguments); 
+// }
+// marks(1,2,3,4); // {0:1, 1:2, 2:3, 3:4}
 
-    // //Using for loop
+// //Using for loop
 
-    // function marks(){
-    //     for (let i = 0; i < arguments.length; i++) {
-    //         console.log(arguments[i]);
-            
-    //     }
-    // }
-    // marks(5,6,7); // 5,6,7 
+// function marks(){
+//     for (let i = 0; i < arguments.length; i++) {
+//         console.log(arguments[i]);
+
+//     }
+// }
+// marks(5,6,7); // 5,6,7 
 //===================================================================
 
 //CONSTRUCTOR FUNCTION : starts with Capital letter : It accepts parameters
@@ -1005,60 +1005,187 @@
 
 //============= Class Inheritance  =================================
 
-class Animal { // Parent
-    constructor (name){
-        this.name = name;
-    }
+// class Animal { // Parent
+//     constructor(name) {
+//         this.name = name;
+//     }
 
-    walk(){
-        console.log(`${this.name} can walk!`);
-    }
+//     walk() {
+//         console.log(`${this.name} can walk!`);
+//     }
 
-    eat(){
-        console.log(`${this.name} can eat..`);
-    }
+//     eat() {
+//         console.log(`${this.name} can eat..`);
+//     }
 
-    sleep(){
-        console.log(`${this.name} can sleep!!`);
-    }
-}
+//     sleep() {
+//         console.log(`${this.name} can sleep!!`);
+//     }
+// }
 
-class Human extends Animal { // Human is a Child of Animal
-    constructor (name){
-        super(name);  // It calls Parent's constructor
-    }
+// class Human extends Animal { // Human is a Child of Animal
+//     constructor(name) {
+//         super(name);  // It calls Parent's constructor
+//     }
 
-    think(){
-        console.log(`${this.name} can Think.`);
-    }
-}
+//     think() {
+//         console.log(`${this.name} can Think.`);
+//     }
+// }
 
-class Bird extends Human {
-    constructor (name){
-        super (name);
-    }
+// class Bird extends Human {
+//     constructor(name) {
+//         super(name);
+//     }
 
-    fly(){
-        console.log(`${this.name} can Fly!`);
-    }
-}
-    const a1 = new Animal ("Lion");
-    const a2 = new Animal ("Tiger");
-    const a3 = new Animal ("Cheetah");
+//     fly() {
+//         console.log(`${this.name} can Fly!`);
+//     }
+// }
+// const a1 = new Animal("Lion");
+// const a2 = new Animal("Tiger");
+// const a3 = new Animal("Cheetah");
 
-    const h1 = new Human("Nilam");
+// const h1 = new Human("Nilam");
 
-    const b1 = new Bird("Parrot");
+// const b1 = new Bird("Parrot");
 
-    console.log(a1); // Animal {name: "Lion"}
+// console.log(a1); // Animal {name: "Lion"}
 
-    a1.sleep(); // Lion can sleep!!
-    a2.eat(); // Tiger can eat..
-    a3.walk(); // Cheetah can walk!
+// a1.sleep(); // Lion can sleep!!
+// a2.eat(); // Tiger can eat..
+// a3.walk(); // Cheetah can walk!
 
-    h1.think(); // Nilam can Think.
-    h1.eat(); // Nilam can eat..
+// h1.think(); // Nilam can Think.
+// h1.eat(); // Nilam can eat..
 
-    b1.fly(); // Parrot can fly!
-    b1.eat(); // Parrot can eat..
-    
+// b1.fly(); // Parrot can fly!
+// b1.eat(); // Parrot can eat..
+
+//------------ 18- Aug- 2020 ---------------------------------------------------------------------------
+
+
+//================  Promise (concept - Foundation) => It is used for making service calls (Asynchronous calls from outside )  ==========
+
+//  $.ajax({ url, success and error }) // Accepts Object as a Parameter
+
+// fetch => Derived from Promise
+
+// const promise = new Promise(function (resolve, reject) { // Promise is a class in JS - creating instance of a promise.
+//                                                 // Promise accepts Function as a param 
+//                                          // Anonymous Function // Success & error = Resolve & Reject
+//     // Service Call
+//     resolve(); // Resolve & Reject are fn call & we are making a resolve() function call 
+// });
+
+//---- Promise has 3 stages
+// 1. Pending
+// 2. Fulfilled = Success
+// 3. Rejected  = error
+
+// SYNTAX
+// const promise = new Promise(function (resolve, reject) {
+//     setTimeout(() => {
+//         // resolve();
+//         reject();
+//     }, 2000);
+// });
+
+// console.log(promise);
+
+// setTimeout(() => {
+//     console.log(promise);
+// }, 3000);
+
+//================================================================
+// function onSuccess() {
+//     console.log("Success!!");
+// }
+
+// function onError() {
+//     console.log("Error..");
+// }
+
+//// *******  wrapped up by  FETCH ****************//
+
+// const promise = new Promise(function (resolve, reject) {
+//     setTimeout(() => {
+//         // resolve(); // Fulfilled
+//         reject(); //
+//     }, 2000);
+// });
+
+// promise.then(onSuccess); //resolved // .then accepts fn as param
+// promise.catch(onError); //rejected // .catch also accepts fn as param
+
+//===================Real Time Example ===========
+//fetch takes a URL
+
+// fetch("https://api.github.com/users/neelamparekh").then(function (response) {
+//     console.log(response); 
+// }).catch(function (error) {
+//     console.log(error);
+// }); 
+
+//--------to get the data ----------------
+
+fetch("https://api.github.com/users/neelamparekh").then(function (response) {
+    return response.json();
+
+}).then(function (data) {
+    console.log(data);
+}).catch(function (error) {
+    console.log(error);
+});
+//---- Equivalent to -----
+
+// function onResponse(response) {
+//     return response.json();
+
+// }
+
+// function getData(data) {
+//     console.log(data);
+//     return true;
+// }
+
+// function getError(error) {
+//     console.log(error);
+//     return false;
+// }
+
+// fetch("https://api.github.com/users/neelamparekh") // equivalent to Promise
+//     .then(onResponse(response))
+//     .then(getData(data))
+//     .catch(getError(error));
+
+//============== Chaining ============
+
+// function getPromise() {
+//     return new Promise((resolve) => {   // you can also pass (reject) 
+//         setTimeout(resolve, 2000);
+//     });
+// }
+
+// function logA() {
+//     console.log("A");
+// }
+
+// function logB() {
+//     console.log("B");
+// }
+
+// function logCAndThrow() {
+//     console.log("C");
+//     throw new Error();
+// }
+
+// function catchError() {
+//     console.log("Error !!");
+// }
+
+// getPromise()
+//     .then(logA)
+//     .then(logB)
+//     .then(logCAndThrow)
+//     .catch(catchError);
