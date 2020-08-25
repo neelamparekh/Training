@@ -2,41 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>User Details</title>
+    <title> Fetching </title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
-    <h1>The User Details</h1>
-    <input type="text" id="userName" />
+    <h1>Check for User Followers' Match</h1>
+    <input type="text" placeholder="Enter UserName1" id="userName1" /><br /><br />
+    <input type="text" placeholder="Enter UserName2" id="userName2" /> <br /></br>
 
-    <button onclick="getDetails();">GET DETAILS</button>
-
-    <ol id="recentSearch"></ol>
-
-    <table id="userData">
-        <tr>
-            <th>Name</th>
-            <th>Location</th>
-        </tr>
-        <tr>
-            <td id="nam"></td>
-            <td id="loc"></td>
-        </tr>
-    </table>
+    <button onclick="validate();"> CHECK </button>
 
 
-    <table id="repoData">
-        <tr>
-            <td id="id"></td>
-            <td id="name"></td>
-        </tr>
-    </table>
-
-
-    <h3 id="location"></h3>
-
-    <table id="weatherData"></table>
 
     <script src="../JS/fetching.js"></script>
 </body>
