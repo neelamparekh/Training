@@ -1189,3 +1189,47 @@ fetch("https://api.github.com/users/neelamparekh").then(function (response) {
 //     .then(logB)
 //     .then(logCAndThrow)
 //     .catch(catchError);
+
+//============== 25 Aug 2020 ===============
+
+// const arr = [[1, 2], [3, 4], [5, 6]];
+// const newArr = [];
+// for (let i = 0; i < arr.length; ++i) {
+//     for (let j = 0; j < arr.length; ++j)
+//         newArr.push(arr[i][j]);
+// }
+// console.log(newArr);
+
+// OR ELSE YOU CAN USE 
+
+// const arr = [[1, 2], [3, 4], [5, 6]];
+// const arr = [1, 2, 3, [4, 5, [6, ["a", "b"], 7]], 8, [9, 10, 11, 12]];
+// console.log(arr);
+// console.log(arr.flat(Infinity));
+// console.log(arr.flat().flat().flat());
+
+//==== QN 2 ====
+
+const arr = [0, 1, false, "a", "", 3, null, undefined];
+console.log(arr);
+console.log(arr.filter(Boolean));
+
+//========================= 28/Aug/2020 =======================================================
+
+//ASYNC AWAIT [ES8 feature]
+//---- normal function--
+// function display() {
+//     return 1;
+// }
+// console.log(display()); // 1
+
+// //========= async ===============
+// async function display() {
+//     return 1;
+// } // async always returns a promise 
+
+// display().then((data) => console.log(data)); // error if NO ASYNC 
+
+
+
+
